@@ -1,4 +1,7 @@
 # 💻 Programación III
+ 
+ ## Autor:
+ Nicole Robles
 
 Repositorio de la materia **Programación III**, donde se recopilan prácticas, ejercicios y proyectos desarrollados a lo largo del curso.
 
