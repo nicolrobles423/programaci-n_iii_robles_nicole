@@ -1,0 +1,16 @@
+.personaje {
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.luffy{
+    background-color: #2563EB;
+}
+.zoro{
+    background-color: #15803D;
+}
+.nami{
+    background-color: #991B1B;
+}
