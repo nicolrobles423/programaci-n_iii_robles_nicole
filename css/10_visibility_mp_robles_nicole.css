@@ -1,0 +1,63 @@
+.secreta {
+    visibility: hidden;
+}
+.paciente {
+    position: static;
+    background-color: #0F766E;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.urgente {
+    position: relative;
+    top: 15px;
+    left: 30px;
+    background-color: #B91C1C;
+    color: white;
+    padding: 20px;
+}
+.tarjeta-relativa {
+    position: relative;
+    margin-top: 40px;
+    background-color: #DBEAFE;
+    padding: 20px;
+    border-radius: 5px;
+}
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #DC2626;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.boton-fijo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #FBBF24;
+    color: #111827;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px;
+    background-color: #134E4A;
+}
+nav a {
+    color: #FBBF24;
+    margin-right: 20px;
+}
+
+section {
+    min-height: 450px;
+    padding: 30px;
+    border-bottom: 1px solid #64748B;
+}
