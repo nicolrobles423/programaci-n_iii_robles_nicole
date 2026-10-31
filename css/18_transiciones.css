@@ -1,0 +1,186 @@
+body {
+    background-color: #0b1020;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+h1{
+   color:facc15; 
+}
+.boton-jedi{
+    padding: 15px 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.boton-jedi:hover{
+    background-color: green;
+}
+.boton-jedi:focus-visible{
+    background-color: green;
+    outline: 3px solid yellow;
+    outline-offset: 4px;
+}
+
+.tarjeta{
+    width: 250px;
+    padding: 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 0.5s ease;
+    transition-property: background-color, transform;
+    transition: background-color 0.5s ease, transform 0.5s;
+}
+.tarjeta:hover{
+    background-color: green;
+    transform: scale(1.5);
+}
+.hangar{
+    padding:30px;
+    background-color: black;
+}
+.nave{
+    width: 100px;
+    padding: 20px;
+    background-color: blue;
+    transition: transform 0.5s ease-out; 
+}
+/* 
+ease: comienza lento, acelera y vuelve a lento al final. (valor por defecto)
+
+linear: velocidad constante de principio a fin.
+
+ease-in: empieza lento y termina rápido al final.
+
+ease-out: empieza rápido y termina lento al final.
+
+ease-in-out: empieza lento, acelera en el medio y termina lento al final.
+
+cubic-bezier(x1, y1, x2, y2): curva personalizada, defines tú mismo la aceleración.
+
+steps(n): avanza en n saltos discretos (útil para animaciones tipo "frame a frame").
+
+step-start: salta directamente al estado final al inicio.
+
+step-end: se mantiene en el estado inicial y salta al final. 
+*/
+
+.nave:hover{
+    transform: translate(50px, -10px);    
+}
+
+.radar{
+    padding: 30px;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 3px solid green;
+    border-radius: 50%;
+}
+
+.indicador{
+    color: green;
+    font-size: 70px;
+    transform: transform 1s ease;
+}
+.indicador:hover{
+    transform: rotate(180deg);
+}
+
+.hangar2{
+    padding: 30px;
+    background-color: black;
+
+}
+.nave2{
+    width: 100px;
+    padding: 20px;
+    background-color:  blue;
+    transition: transform 0.5 ease;
+}
+.nave2:hover{
+    transform: translateX(50px) rotate(15deg) scale(4);
+}
+
+.espacio{
+    width: 100px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: black;
+    overflow: hidden;
+}
+.xwing{
+    width: 100;
+    background-color: blue;
+    text-align: center;
+    animation-name: vuelo;
+    animation-duration: 3s;
+}
+
+@keyframes vuelo {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(200px);
+    }
+}
+
+.espacio2{
+    width: 100;
+    max-width: 600px;
+    padding: 20px;
+    background-color: black;
+    overflow: hidden;
+}
+.xwing2{
+    width: 100px;
+    background-color: blue;
+    text-align: center;
+    animation-name: vuelo2;
+    animation-duration: 3s;
+}
+
+@keyframes vuelo2 {
+    from{
+        transform: translateX(120px, 150px);
+    }
+    to{
+        transform: translateX(280px, 260px);
+    }
+}
+.alerta{
+    width: 220px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    animation-name: advertencia;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes advertencia {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
