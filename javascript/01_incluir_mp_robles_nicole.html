@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript - Veterinaria Patitas Felices - Nicole Robles</title>
+    <script>
+        alert('¡Bienvenido a Patitas Felices! al inicio de página');
+        console.log('Saludo desde el inicio de la página');
+    </script>
+</head>
+<body>
+    <h1>Incluir JavaScript en documentos HTML</h1>
+    <h2>Modo Inline</h2>
+    <button onclick="alert('¡Tu cita con la Dra. Nicole fue agendada!')">
+        Agendar cita
+    </button>
+    <input type="text" oninput="console.log(this.value)" placeholder="Nombre de tu mascota">
+    <input type="text" onchange="console.log('Valor final guardado:', this.value)" placeholder="Escribe la raza y haz clic fuera...">
+    <input type="text" onfocus="console.log('El usuario está escribiendo el motivo de la consulta...')" onblur="alert('¡Atención! Saliste del campo del motivo de la consulta.')" placeholder="Haz clic dentro y fuera...">
+    <script src="01_incluir_mp_robles_nicole.js"></script>
+</body>
+</html>
