@@ -56,4 +56,28 @@ do {
     semanas++;
     console.log("Semana", semanas, "Ahorro actual:", ahorro, "soles");
 } while (ahorro < meta);
-console.log("Meta alcanzada después de", semanas, "semanas. Ahorro total:", ahorro, "soles");
+console.log("Meta alcanzada después de " + semanas + " semanas. La clínica puede comprar el equipo de rayos X:", ahorro, "soles");
+
+console.log("La Dra. Nicole prepara las dosis de vitaminas");
+let dosisVitaminas = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
+let objetivoVitaminas = 150;
+let vitaminasTotal = 0;
+let indice = 0;
+while (indice < dosisVitaminas.length) {
+  let dosisActual = dosisVitaminas[indice];
+  indice++;
+  if (dosisActual < 20) {
+    console.log("Dosis " + dosisActual + " mg descartada (muy pequeña)");
+    continue;
+  }
+
+  vitaminasTotal += dosisActual;
+  console.log("Dosis " + dosisActual + " mg agregada. Vitaminas totales: " + vitaminasTotal + " mg");
+  if (vitaminasTotal >= objetivoVitaminas) {
+    console.log("Objetivo de vitaminas alcanzado.");
+    break;
+  }
+
+}
+console.log("Vitaminas totales acumuladas: " + vitaminasTotal + " mg");
+
