@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD con arreglos - Veterinaria Patitas Felices - Nicole Robles</title>
+  <script src="06_crud_arreglo_mp_robles_nicole.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Patitas Felices</h1>
+    <h2 id="tituloFormulario">Registro Paciente</h2>
+    <form id="formulario">
+       <input type="text" id="nombre">
+        <select id="especie">
+          <option value="Perro">Perro</option>
+          <option value="Gato">Gato</option>
+          <option value="Conejo">Conejo</option>
+        </select>
+        <select id="estado">
+          <option value="Sano">Sano</option>
+          <option value="Enfermo">Enfermo</option>
+          <option value="En observación">En observación</option>
+        </select>
+        <button type="submit" id="guardar">Agregar</button>
+        <button type="button" id="cancelar">Cancelar</button>
+    </form>
+    <h2>Pacientes Registrados</h2>
+    <h2 id="cantidad">Cantidad</h2>
+    <div id="contenedor">
+
+    </div>
+</body>
+</html>
